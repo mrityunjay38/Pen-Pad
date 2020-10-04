@@ -1,0 +1,44 @@
+.left-sidebar svg{
+    width: 100%;
+    transition: transform 0.05s;
+}
+
+.tools, .add-canvas {
+    width: 3.5em;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 50px;
+    box-shadow: 0 0 15px grey;
+    padding: 5px;
+}
+
+.add-canvas {
+    background: rgba(0,0,0,0);
+    margin-top: 1.5em;
+}
+
+.tools span, .add-canvas span {
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50px;
+    background: lightgray;
+    transition: transform 0.5s;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.add-canvas span {
+    background: white;
+}
+
+.tools span:hover, .add-canvas span:hover {
+    transform: scale(1.1);
+}
+
+.tools span:hover svg, .add-canvas span:hover svg {
+    transform: scale(1.1);
+}
