@@ -1,10 +1,10 @@
 import actionTypes from '../types/actionTypes';
 const { CREATE_NEW_BOARD } = actionTypes;
 
-const whiteBoards = (boards = [1], action) => {
+const whiteBoards = (boards = [], action) => {
     switch(action.type){
         case CREATE_NEW_BOARD:
-            return [...boards, boards[boards.length - 1] + 1]
+            return [...boards, action.board]
         default:
             return boards;
     }
