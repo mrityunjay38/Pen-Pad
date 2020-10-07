@@ -1,6 +1,5 @@
 import React from "react";
-import Row from "../Layouts/Row";
-import Col from "../Layouts/Col";
+import { Row, Col } from "../Layouts";
 import Tools from "../Tools";
 import "./index.css";
 import Whiteboard from "../Canvas";
