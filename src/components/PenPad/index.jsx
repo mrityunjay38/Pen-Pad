@@ -4,10 +4,11 @@ import Col from "../Layouts/Col";
 import Tools from "../Tools";
 import "./index.css";
 import Whiteboard from "../Canvas";
+import StatusBar from '../StatusBar';
 import { useSelector } from "react-redux";
 
 const PenPad = () => {
-  const boards = useSelector(state => state.boards);
+  const boards = useSelector((state) => state.boards);
 
   return (
     <div className="pen-pad">
@@ -15,9 +16,14 @@ const PenPad = () => {
         <Tools />
       </Col>
       <Col>
-        {
-          boards.map( (board,id) => <Whiteboard key={id} />)
-        }
+        <div className="main-content">
+          <div className="boards">
+            {boards.map((board, id) => (
+              <Whiteboard key={id} />
+            ))}
+          </div>
+          <StatusBar />
+        </div>
       </Col>
     </div>
   );
