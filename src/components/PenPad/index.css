@@ -3,3 +3,26 @@
     width: 100%;
     background: darkgrey;
 }
+
+.main-content {
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.boards {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.boards .canvas {
+    margin-bottom: 10px;
+}
+
+.boards .canvas:last-child {
+    margin-bottom: 0;
+}

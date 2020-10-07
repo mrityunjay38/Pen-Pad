@@ -36,7 +36,7 @@ const useCreateBoard = () => {
       const numOfBoards = boards.length;
       dispatch(createNewBoard(numOfBoards + 1));
     }
-  }
+  };
 };
 
 export default Tools;
