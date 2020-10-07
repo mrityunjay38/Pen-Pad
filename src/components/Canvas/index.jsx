@@ -1,11 +1,12 @@
 import React from 'react';
+import { Row } from '../Layouts';
 import './index.css';
 
 const Canvas = () => {
     return (
-        <div className="canvas">
+        <Row className="canvas">
             <canvas className="whiteboard" />
-        </div>
+        </Row>
     )
 }
 

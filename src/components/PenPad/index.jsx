@@ -10,21 +10,21 @@ const PenPad = () => {
   const boards = useSelector((state) => state.boards);
 
   return (
-    <div className="pen-pad">
+    <Row className="pen-pad">
       <Col width="5em">
         <Tools />
       </Col>
       <Col>
-        <div className="main-content">
-          <div className="boards">
+        <Row className="main-content">
+          <Row className="boards">
             {boards.map((board, id) => (
               <Whiteboard key={id} />
             ))}
-          </div>
+          </Row>
           <StatusBar />
-        </div>
+        </Row>
       </Col>
-    </div>
+    </Row>
   );
 };
 

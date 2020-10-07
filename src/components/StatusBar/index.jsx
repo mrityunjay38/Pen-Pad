@@ -1,9 +1,10 @@
 import React from 'react';
+import { Row } from '../Layouts';
 import './index.css';
 
 const StatusBar = () => {
     return (
-        <div className="status-bar"></div>
+        <Row className="status-bar"></Row>
     )
 }
 
