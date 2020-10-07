@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Row, Col } from '../Layouts';
 import { ReactComponent as Pen } from "../../assets/img/pen.svg";
 import { ReactComponent as Eraser } from "../../assets/img/eraser.svg";
 import { ReactComponent as Palette } from "../../assets/img/palette.svg";
@@ -13,16 +14,16 @@ const Tools = () => {
     useEffect(newPad,[]);
 
   return (
-    <div className="left-sidebar">
-      <div className="tools">
+    <Row className="left-sidebar" align="center">
+      <Row className="tools">
         <span><Pen /></span>
         <span><Eraser /></span>
         <span><Palette /></span>
-      </div>
-      <div className="add-canvas">
+      </Row>
+      <Row className="add-canvas">
         <span><NewPad onClick={() => newPad()} /></span>
-      </div>
-    </div>
+      </Row>
+    </Row>
   );
 };
 
