@@ -31,13 +31,18 @@
     transition: width 0.2s ease;
 }
 
-.landscape, .portrait {
+.landscape, .portrait, .grid {
     justify-content: center;
     align-items: center;
 }
 
 .portrait .main-content{
     width: 60%;
+    transition: width 0.2s ease;
+}
+
+.grid .main-content {
+    width: 100%;
     transition: width 0.2s ease;
 }
 
