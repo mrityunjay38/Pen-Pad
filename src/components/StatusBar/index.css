@@ -8,16 +8,16 @@
     background: white;
 }
 
-.view-type {
+.view-type, .page-info {
     padding: 5px;
 }
 
-.view-type svg {
+.view-type svg, .page-info svg {
     width: 0.8em;
     height: 0.8em;
 }
 
-.view-type span {
+.view-type span, .page-info span {
     width: 1.5em;
     height: 1.5em;
     border-radius: 50px;
@@ -30,4 +30,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#download:hover, #download-all:hover {
+    background: white;
+}
+
+#delete:hover {
+    background: tomato;
 }
