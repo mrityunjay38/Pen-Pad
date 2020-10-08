@@ -7,6 +7,12 @@
     transition: transform 0.05s;
 }
 
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .tools, .add-canvas {
     width: 3.5em;
     background: white;

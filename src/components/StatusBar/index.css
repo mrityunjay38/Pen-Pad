@@ -1,4 +1,30 @@
 .status-bar {
     min-height: 2em;
+    max-height: 2em;
     background: lightblue;
+}
+
+.view-type {
+    padding: 5px;
+}
+
+.view-type svg {
+    width: 100%;
+}
+
+.view-type span {
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50px;
+    transition: transform 0.5s;
+    padding: 5px;
+    margin: 5px 0;
+    cursor: pointer;
+    background: white;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

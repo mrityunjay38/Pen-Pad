@@ -16,9 +16,9 @@ const Tools = () => {
   return (
     <Row className="left-sidebar" align="center">
       <Row className="tools">
-        <span><Pen /></span>
-        <span><Eraser /></span>
-        <span><Palette /></span>
+        <span className="center"><Pen /></span>
+        <span className="center"><Eraser /></span>
+        <span className="center"><Palette /></span>
       </Row>
       <Row className="add-canvas">
         <span><NewPad onClick={() => newPad()} /></span>
