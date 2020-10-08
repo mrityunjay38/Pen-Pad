@@ -22,7 +22,7 @@
     margin-bottom: 10px;
 }
 
-.boards .canvas:last-child {
+.landscape .canvas:last-child, .portrait .canvas:last-child {
     margin-bottom: 0;
 }
 
@@ -43,4 +43,16 @@
 
 .landscape .boards, .portrait .boards {
     display: block;
+}
+
+.grid .boards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grid .canvas {
+    width: 49.5%;
+    margin-bottom: 15px;
 }
