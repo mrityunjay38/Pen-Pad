@@ -8,6 +8,7 @@ import { useSelector } from "react-redux";
 
 const PenPad = () => {
   const boards = useSelector((state) => state.boards);
+  const view = useSelector(state => state.view.viewType);
 
   return (
     <Row className="pen-pad">
@@ -16,7 +17,7 @@ const PenPad = () => {
       </Col>
       <Col>
         <Row className="main-content">
-          <Row className="boards">
+          <Row className={'boards ' + view}>
             {boards.map((board, id) => (
               <Whiteboard key={id} />
             ))}
