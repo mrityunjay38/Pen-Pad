@@ -1,7 +1,7 @@
 import React from "react";
 import { Row, Col } from "../Layouts";
-import { ReactComponent as VerticalView } from "../../assets/img/vertical-page-view.svg";
-import { ReactComponent as HorizontalView } from "../../assets/img/horizontal-page-view.svg";
+import { ReactComponent as PortraitView } from "../../assets/img/landscape-view.svg";
+import { ReactComponent as LandscapeView } from "../../assets/img/portrait-view.svg";
 import { ReactComponent as GridView } from "../../assets/img/grid.svg";
 import { useDispatch, useSelector } from "react-redux";
 import { viewChanger } from "../../redux/actions/view";
@@ -15,16 +15,16 @@ const StatusBar = () => {
     <Row className="status-bar">
       <Col className="view-type" align="flex-start">
         <span
-          className={`center${view === "vertical" ? " active" : ""}`}
-          onClick={() => changeView("vertical")}
+          className={`center${view === "landscape" ? " active" : ""}`}
+          onClick={() => changeView("landscape")}
         >
-          <VerticalView />
+          <LandscapeView />
         </span>
         <span
-          className={`center${view === "horizontal" ? " active" : ""}`}
-          onClick={() => changeView("horizontal")}
+          className={`center${view === "portrait" ? " active" : ""}`}
+          onClick={() => changeView("portrait")}
         >
-          <HorizontalView />
+          <PortraitView />
         </span>
         <span
           className={`center${view === "grid" ? " active" : ""}`}
