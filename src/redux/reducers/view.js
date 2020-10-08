@@ -2,7 +2,7 @@ import actionTypes from '../types/actionTypes';
 const { VIEW_CHANGE} = actionTypes;
 
 const initState = {
-    viewType: 'vertical'
+    viewType: 'landscape'
 }
 
 const view = (state = initState, action) => {

@@ -16,13 +16,15 @@ const PenPad = () => {
         <Tools />
       </Col>
       <Col>
-        <Row className="main-content">
-          <Row className={'boards ' + view}>
+        <Row className={view}>
+          <Col className="main-content">
+          <Row className="boards">
             {boards.map((board, id) => (
               <Whiteboard key={id} />
             ))}
           </Row>
           <StatusBar />
+          </Col>
         </Row>
       </Col>
     </Row>
