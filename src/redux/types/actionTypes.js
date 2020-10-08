@@ -1,6 +1,6 @@
 const actionTypes = {
     "CREATE_NEW_BOARD": "CREATE_NEW_BOARD",
-    "VERTICAL_VIEW": "VERTICAL_VIEW" 
+    "VIEW_CHANGE": "VIEW_CHANGE"
 }
 
 export default actionTypes;

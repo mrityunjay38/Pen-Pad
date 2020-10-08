@@ -1,5 +1,5 @@
 import actionTypes from '../types/actionTypes';
-const { VERTICAL_VIEW } = actionTypes;
+const { VIEW_CHANGE} = actionTypes;
 
 const initState = {
     viewType: 'vertical'
@@ -7,8 +7,8 @@ const initState = {
 
 const view = (state = initState, action) => {
     switch(action.type){
-        case VERTICAL_VIEW:
-            return {...state, viewType: 'vertical'};
+        case VIEW_CHANGE:
+            return {...state, viewType: action.view};
         default:
             return state;
     }

@@ -1,8 +1,9 @@
 import actionTypes from '../types/actionTypes';
-const { VERTICAL_VIEW } = actionTypes;
+const { VIEW_CHANGE } = actionTypes;
 
-export const viewVertical = () => {
+export const viewChanger = (view) => {
     return {
-        type: VERTICAL_VIEW
+        type: VIEW_CHANGE,
+        view
     }
 }
