@@ -4,23 +4,26 @@
     background: lightblue;
 }
 
+.status-bar .active {
+    background: white;
+}
+
 .view-type {
     padding: 5px;
 }
 
 .view-type svg {
-    width: 100%;
+    width: 0.8em;
+    height: 0.8em;
 }
 
 .view-type span {
     width: 1.5em;
     height: 1.5em;
     border-radius: 50px;
-    transition: transform 0.5s;
     padding: 5px;
-    margin: 5px 0;
     cursor: pointer;
-    background: white;
+    margin: 0 5px;
 }
 
 .center {
