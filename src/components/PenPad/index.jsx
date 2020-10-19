@@ -21,7 +21,7 @@ const PenPad = () => {
           <Col className="main-content" width={width} height={height}>
           <Row className="boards">
             {boards.map((board, id) => (
-              <Whiteboard key={id} width={width} height={height} />
+              <Whiteboard key={id} width={width} height={height - 32} /> // subtract statusbar height
             ))}
           </Row>
           <StatusBar />
