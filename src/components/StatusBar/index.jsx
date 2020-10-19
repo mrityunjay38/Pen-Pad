@@ -1,7 +1,7 @@
 import React from "react";
 import { Row, Col } from "../Layouts";
-import { ReactComponent as PortraitView } from "../../assets/img/landscape-view.svg";
-import { ReactComponent as LandscapeView } from "../../assets/img/portrait-view.svg";
+import { ReactComponent as LandscapeView } from "../../assets/img/landscape-view.svg";
+import { ReactComponent as PortraitView } from "../../assets/img/portrait-view.svg";
 import { ReactComponent as GridView } from "../../assets/img/grid.svg";
 import { ReactComponent as Trash } from "../../assets/img/trash.svg";
 import { ReactComponent as DownloadAll } from '../../assets/img/download-all.svg';
