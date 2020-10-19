@@ -1,0 +1,79 @@
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    height: 100%;
+    background-color: rgba(0,0,0,.45);
+}
+
+.modal-body {
+    position: relative;
+    min-width: 30em;
+    border-radius: 2px;
+    background: white;
+}
+
+.modal-body .header {
+    padding: 16px 24px;
+    color: rgba(0,0,0,.85);
+    background: #fff;
+    border-bottom: 1px solid #f0f0f0;
+    margin: 0;
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 22px;
+}
+
+.modal-body .content {
+    padding: 16px 24px;
+    color: rgba(0,0,0,.85);
+    background: #fff;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 0.9em;
+}
+
+.modal-body .action {
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px 24px;
+    color: rgba(0,0,0,.85);
+    background: #fff;
+    border-top: 1px solid #f0f0f0;   
+}
+
+.modal-body button {
+    margin-left: 10px;
+    line-height: 1.5715;
+    font-weight: 400;
+    white-space: nowrap;
+    text-align: center;
+    cursor: pointer;
+    padding: 4px 15px;
+    font-size: 14px;
+    border-radius: 2px;
+    color: rgba(0,0,0,.85);
+    background: #fff;
+    border: 1px solid #d9d9d9;
+}
+
+.modal-body .cancel:hover, .modal-body .close:hover {
+    color: tomato;
+    border: 1px solid tomato;
+}
+
+.modal-body .primary-button {
+    background: slategray;
+    border-color: slategray;
+    color: white;
+}
+
+.modal-body .primary-button:hover {
+    background: lightslategray;
+    border-color: lightslategray;
+}
