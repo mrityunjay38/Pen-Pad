@@ -8,7 +8,10 @@ import { ReactComponent as DownloadAll } from '../../assets/img/download-all.svg
 import { ReactComponent as Download } from "../../assets/img/download.svg";
 import { useDispatch, useSelector } from "react-redux";
 import { viewChanger } from "../../redux/actions/view";
+import actionTypes from "../../redux/types/actionTypes";
 import "./index.css";
+
+const { LANDSCAPE_VIEW, PORTRAIT_VIEW, GRID_VIEW } = actionTypes;
 
 const StatusBar = () => {
   const changeView = useChangeView();
@@ -18,20 +21,20 @@ const StatusBar = () => {
     <Row className="status-bar">
       <Col className="view-type" align="flex-start">
         <span
-          className={`center${view === "landscape" ? " active" : ""}`}
-          onClick={() => changeView("landscape")}
+          className={`center${view === LANDSCAPE_VIEW ? " active" : ""}`}
+          onClick={() => changeView(LANDSCAPE_VIEW)}
         >
           <LandscapeView />
         </span>
         <span
-          className={`center${view === "portrait" ? " active" : ""}`}
-          onClick={() => changeView("portrait")}
+          className={`center${view === PORTRAIT_VIEW ? " active" : ""}`}
+          onClick={() => changeView(PORTRAIT_VIEW)}
         >
           <PortraitView />
         </span>
         <span
-          className={`center${view === "grid" ? " active" : ""}`}
-          onClick={() => changeView("grid")}
+          className={`center${view === GRID_VIEW ? " active" : ""}`}
+          onClick={() => changeView(GRID_VIEW)}
         >
           <GridView />
         </span>

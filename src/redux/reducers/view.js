@@ -1,8 +1,8 @@
 import actionTypes from '../types/actionTypes';
-const { VIEW_CHANGE} = actionTypes;
+const { VIEW_CHANGE, LANDSCAPE_VIEW } = actionTypes;
 
 const initState = {
-    viewType: 'landscape'
+    viewType: LANDSCAPE_VIEW
 }
 
 const view = (state = initState, action) => {
