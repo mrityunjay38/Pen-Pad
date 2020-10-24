@@ -20,7 +20,7 @@
 }
 
 .boards .canvas {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .landscape .canvas:last-child, .portrait .canvas:last-child {
@@ -60,5 +60,4 @@
 
 .grid .canvas {
     width: 49.5%;
-    margin-bottom: 15px;
 }
