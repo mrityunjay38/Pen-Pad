@@ -1,41 +1,78 @@
 .status-bar {
-    min-height: 2em;
-    max-height: 2em;
-    background: lightblue;
+  min-height: 2em;
+  max-height: 2em;
+  background: lightblue;
 }
 
 .status-bar .active {
-    background: white;
+  background: white;
 }
 
-.view-type, .page-info {
-    padding: 5px;
+.view-type,
+.page-info {
+  padding: 5px;
 }
 
-.view-type svg, .page-info svg {
-    width: 0.8em;
-    height: 0.8em;
+.view-type svg,
+.page-info svg {
+  width: 0.8em;
+  height: 0.8em;
 }
 
-.view-type span, .page-info span {
-    width: 1.5em;
-    height: 1.5em;
-    border-radius: 50px;
-    padding: 5px;
-    cursor: pointer;
-    margin: 0 5px;
+.view-type span,
+.page-info span {
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50px;
+  padding: 5px;
+  cursor: pointer;
+  margin: 0 5px;
 }
 
 .center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#download:hover, #download-all:hover {
-    background: white;
+#download:hover,
+#download-all:hover {
+  background: white;
 }
 
 #delete:hover {
-    background: tomato;
+  background: tomato;
+}
+
+.minus,
+.plus {
+  /* font-size: 1.5em; */
+}
+
+.zoom-in-out svg {
+  width: 0.5em;
+  height: 0.5em;
+}
+
+.range {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.zoom-in-out input[type=range] {
+    appearance: none;
+    background-color: slategray;
+    width: 200px;
+    height: 2px;
+    outline: none;
+}
+
+.zoom-in-out input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    background-color: black;
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
 }

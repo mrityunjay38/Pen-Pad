@@ -11,7 +11,7 @@ const { LANDSCAPE_VIEW, PORTRAIT_VIEW, GRID_VIEW } = actionTypes;
 
 const PenPad = () => {
   const boards = useSelector((state) => state.boards);
-  const view = useSelector(state => state.view.viewType);
+  const [view,scale] = useSelector(state => [state.view.viewType,{transform: `scale(${state.view.zoom})`}]);
   const {width, height, viewWidth, viewHeight} = useConstructCanvas();
 
   return (
@@ -22,11 +22,13 @@ const PenPad = () => {
       <Col>
         <Row className={view}>
           <Col className="main-content" width={viewWidth} height={viewHeight}>
-          <Row className="boards">
+          <Col className="container">
+          <Row className="boards" style={scale}>
             {boards.map((board, id) => (
               <Whiteboard key={id} width={width} height={height - 32} /> // subtract statusbar height
             ))}
           </Row>
+          </Col>
           <StatusBar />
           </Col>
         </Row>
