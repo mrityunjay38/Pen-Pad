@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Row, Col } from '../Layouts';
+import { Row } from '../Layouts';
 import { ReactComponent as Pen } from "../../assets/img/pen.svg";
 import { ReactComponent as Eraser } from "../../assets/img/eraser.svg";
 import { ReactComponent as Palette } from "../../assets/img/palette.svg";
