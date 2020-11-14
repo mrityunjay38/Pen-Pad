@@ -1,11 +1,11 @@
 import React, {useEffect,useState} from "react";
 import { Row, Col } from "../Layouts";
 import Tools from "../Tools";
-import "./index.css";
 import Whiteboard from "../Canvas";
 import StatusBar from '../StatusBar';
 import { useSelector } from "react-redux";
 import actionTypes from "../../redux/types/actionTypes";
+import "./index.css";
 
 const { LANDSCAPE_VIEW, PORTRAIT_VIEW, GRID_VIEW } = actionTypes;
 

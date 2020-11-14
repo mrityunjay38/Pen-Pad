@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState} from "react";
 import { Row, Col } from "../Layouts";
 import { ReactComponent as LandscapeView } from "../../assets/img/landscape-view.svg";
 import { ReactComponent as PortraitView } from "../../assets/img/portrait-view.svg";
@@ -13,8 +13,6 @@ import { viewChanger,changeScale } from "../../redux/actions/view";
 import { modal } from '../../redux/actions/modal';
 import actionTypes from "../../redux/types/actionTypes";
 import "./index.css";
-import { useState } from "react";
-import { useEffect } from "react";
 
 const { LANDSCAPE_VIEW, PORTRAIT_VIEW, GRID_VIEW } = actionTypes;
 

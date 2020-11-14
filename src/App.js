@@ -1,8 +1,8 @@
 import React from "react";
 import PenPad from './components/PenPad';
 import Modal from './components/Modal';
-import "./assets/css/App.css";
 import { useSelector } from "react-redux";
+import "./assets/css/App.css";
 
 function App() {
   const modalProps = useSelector(state => state.modal);
