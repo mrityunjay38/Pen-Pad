@@ -10,6 +10,7 @@ import { ReactComponent as ZoomOut } from "../../assets/img/minus.svg";
 import { ReactComponent as ZoomIn } from "../../assets/img/plus.svg";
 import { useDispatch, useSelector } from "react-redux";
 import { viewChanger,changeScale } from "../../redux/actions/view";
+import { modal } from '../../redux/actions/modal';
 import actionTypes from "../../redux/types/actionTypes";
 import "./index.css";
 import { useState } from "react";
@@ -68,8 +69,14 @@ const StatusBar = () => {
 
 const useChangeView = () => {
   const dispatch = useDispatch();
+  
   return (type) => {
-    if (type) dispatch(viewChanger(type));
+    const warning = {
+      header: 'Layout Change',
+      message: 'Are you sure?, canvas will reset.',
+      onOk: () => dispatch(viewChanger(type))
+    }
+    dispatch(modal(warning));
   };
 };
 
