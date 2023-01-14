@@ -1,6 +1,8 @@
 # Pen-Pad
 Simple white board.
 
+![Pen-Pad Demo](https://raw.githubusercontent.com/mrityunjay38/Pen-Pad/develop/public/pen-pad-demo.gif)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
